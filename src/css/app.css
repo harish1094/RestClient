@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Heebo';
+    src: local('Heebo'), url(../fonts/Heebo.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: local('Heebo-Bold'), url(../fonts/Heebo-Bold.ttf) format('opentype');
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-family: Heebo, sans-serif,'Roboto', 'Oxygen',
+     -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu';
+}
+
+code {
+    color: white;
+    font-family: Heebo, sans-serif,'Roboto', 'Oxygen',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu';
+}
+
+/**== Full page layout style ==*/
+.full-screen {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+body>#root>div {
+    min-height: 100vh;
+    background-color: #aab4be9c;
+}
+
+.screen-height {
+    min-height: 88ch;
+}
+/**
+* Filled Button 
+*/
+.primary-button {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: #02274d !important;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #001e3c;
+    text-align: center;
+}
+
+.primary-button:disabled,
+.primary-button[disabled] {
+    background-color: #02274d !important;
+    border: 2px solid #001e3c;
+}
+
+.primary-button:hover:enabled {
+    outline: none;
+    box-shadow: 0 0 11px #2564eb5d;
+    
+    background-color: #02274d !important;
+    border: 2px solid #001e3c;
+}
+
+
+/**
+* Outlined Button 
+*/
+.primary-button-outlined {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: white !important;
+    color: #02274d !important;
+    padding: 6px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #02274d !important;
+    text-align: center;
+}
+
+.primary-button-outlined:focus {
+    outline: none;
+    border: 2px solid #02274d !important;
+}
+
+.primary-button-outlined:hover:enabled {
+    box-shadow: 0 0 11px #2564eb5d;
+}
+
+
+.menu-button{
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: transparent !important;
+    padding: 5px 0px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    color:white
+}
+
+
+.menu-button,
+.menu-button[disabled] {
+    background-color: transparent !important;
+    border: 2px solid none;
+}
+
+.menu-button:hover:enabled {
+    outline: none;
+    box-shadow: none;
+}
+
+.menu-button-active {
+    border-bottom: 2px solid #001e3c;
+}
+
+.form-control {
+    display: block; 
+    background-color: white !important;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid #001e3c !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: 1px solid #2563eb;;
+    box-shadow: none;
+}
+
+
+
+/*========== loading Button onclick animation ============*/
+
+.loading-anim-container {
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-anim-container>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #001e3c;
+    opacity: 1;
+    margin: 2px;
+    animation: loading-anim-container 0.3s infinite alternate;
+}
+
+@keyframes loading-anim-container {
+    to {
+        background-color: #e6ecf7;
+    }
+}
+
+.loading-anim-container>div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading-loader>div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.inner-div{
+    background-color: #001e3ca6;
+     padding: 10px;
+}
+
+.res-text{
+    font-family: Heebo-Bold, Heebo, sans-serif;
+}
+
+.res-div{
+    background-color: #b4bdc5bb;
+    padding: 20px;
+    overflow: auto;
+}
+
+.history-title {
+    background-color: #001e3c;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-family: Heebo-Bold, Heebo, sans-serif;
+}
+
+.history-div {
+    color: black;
+    overflow: auto;
+}
+
+.wrap-text {
+    word-wrap: break-word;
+    white-space: pre-line;
+    color: black;
+}
+
+/*==================================================*/

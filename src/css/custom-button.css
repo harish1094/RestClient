@@ -1,0 +1,132 @@
+
+/**
+* Filled Button 
+*/
+.primary-button {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: #C12C89 !important;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #C12C89;
+    text-align: center;
+}
+
+.primary-button:disabled,
+.primary-button[disabled] {
+    background-color: #f0b1d6 !important;
+    border: 2px solid #f0b1d6;
+}
+
+.primary-button:hover:enabled {
+    outline: none;
+    box-shadow: 0 0 11px #f0b1d6;
+}
+
+/**
+* Outlined Button 
+*/
+.primary-button-outlined {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: white !important;
+    color: #C12C89 !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #C12C89;
+    text-align: center;
+}
+
+.primary-button-outlined:focus {
+    outline: none;
+    border: 2px solid #C12C89 !important;
+}
+
+.primary-button-outlined:hover:enabled {
+    box-shadow: 0 0 11px #f0b1d6;
+}
+
+/**
+* No Border Button 
+*/
+.primary-button-nofilled {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: white !important;
+    color: #C12C89 !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.primary-button-nofilled:hover:enabled {
+    box-shadow: 0 0 11px #f0b1d6;
+}
+
+.secondary-button {
+    font-family: Heebo-Bold, Heebo, sans-serif;
+    background-color: #4F888E !important;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #4F888E;
+    text-align: center;
+    font-size: 16px;
+}
+
+.secondary-button:disabled,
+.secondary-button[disabled] {
+    background-color: #4f888e91 !important;
+    border: 1px solid #4f888e91;
+}
+
+
+.secondary-button:hover:enabled {
+    box-shadow: 0 0 10px #4f888ea4;
+}
+
+.secondary-button-small {
+    background-color: #4F888E !important;
+    font-size: 14px;
+    color: white;
+    font-family: Heebo-Bold;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 4px 15px;
+    border: 1px solid #4F888E;
+    text-align: center;
+}
+
+.secondary-button-small:disabled,
+.secondary-button-small[disabled] {
+    background-color: #4f888e91 !important;
+    border: 1px solid #4f888e91;
+}
+
+
+.secondary-button-small:hover:enabled {
+    box-shadow: 0 0 10px #4f888ea4;
+}
+
+.orange-button {
+    background-color: white !important;
+    font-size: 14px;
+    color: #FE6231;
+    font-family: Heebo-Bold;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+}
+
+.orange-button:disabled,
+.orange-button[disabled] {
+    color: #FE6231 !important;
+}
+
+
+.orange-button:hover:enabled {
+    box-shadow: none;
+}

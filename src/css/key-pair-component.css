@@ -1,0 +1,21 @@
+
+.key-label-text {
+    font-family: Heebo;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    padding-right: 5px;
+    word-wrap: break-word;
+    max-width: -webkit-fill-available; /* chrome */
+    max-width: -moz-available; /* firefox */
+}
+
+.key-label-text-bold {
+    font-family: Heebo-Bold;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    word-wrap: break-word;
+    max-width: -webkit-fill-available; /* chrome */
+    max-width: -moz-available; /* firefox */
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Heebo';
+  src: local('Heebo'), url(./fonts/Heebo.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Heebo-Bold';
+  src: local('Heebo-Bold'), url(./fonts/Heebo-Bold.ttf) format('opentype');
+}
+
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Heebo, sans-serif,'Roboto', 'Oxygen',
+   -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu';
+}
+
+code {
+  font-family: Heebo, sans-serif,'Roboto', 'Oxygen',
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu';
+}
