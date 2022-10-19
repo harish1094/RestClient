@@ -1,0 +1,13 @@
+name: Do things every 1 minutes
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+ 
+test:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v3
+    - run: echo "Hello! Running Test.."
